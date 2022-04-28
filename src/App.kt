@@ -17,4 +17,16 @@ fun main() {
     val image = ModelFactory.create(ImageModel::class).apply {
         this.description = "cdf"
     }.draw()
+
+    // Wykorzystanie listy :)
+    listOf(
+        ModelFactory.create(ImageModel::class),
+        ModelFactory.create(ImageModel::class),
+        ModelFactory.create(ImageModel::class),
+        ModelFactory.create(ImageModel::class),
+        ModelFactory.create(ImageModel::class),
+        ModelFactory.create(ButtonModel::class)
+    ).forEach {
+        it.draw()
+    }
 }
