@@ -7,7 +7,7 @@ class Image : ImageModel, Cloneable {
     override var description: String = "abc"
 
     override fun draw() {
-        System.out.println("Class " + this::class.java)
+        System.out.println("Class " + this::class.java + ", :: " + this)
     }
 
     override fun makeNewInstance(): BaseControlModel {
